@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  ras:
+    build:
+      context: ..
+      dockerfile: docker/dockerfile
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+
+    volumes:
+      - ../:/app
+      - /home/eugenekim/.emacs.d:/root/.emacs.d
+    ports:
+      - "8001:8001"

@@ -1,0 +1,76 @@
+*~
+~*
+*.pyc
+docs/_build/*
+uploads
+dev.db
+*#
+*.swp
+*.log
+node_modules
+.DS_Store
+.#*
+media
+__MACOSX
+**/conf/local
+*.pid
+.dir-locals.el
+bin/
+target/
+gen/
+# Xcode
+.DS_Store
+build/
+build/*
+!build/css/bootstrap-datetimepicker.css
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!littlehome.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+
+local.properties
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+misc/ios/
+*.iml
+
+# custom-bootstrap.css
+# custom-style.css
+requirejs_build.txt
+old
+**/data/**/generated
+.cache
+.env
+business
+_.*
+static_build/
+./happypack
+.watchmanconfig
+*.pem
+.tern-port
+data
+*parquet*
+_SUCCESS
+*.crc
+*.tgz
+src_copied
+*.crt
+*.key
+.ipynb_checkpoints

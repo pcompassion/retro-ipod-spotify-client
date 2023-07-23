@@ -1,0 +1,23 @@
+# syntax=docker/dockerfile:1
+FROM ubuntu:22.04
+ENV TZ=Asia/Seoul \
+    DEBIAN_FRONTEND=noninteractive
+WORKDIR /app
+
+# COPY install.sh /app
+
+RUN apt update
+RUN apt install -y python-setuptools python3-setuptools python3-pip
+
+RUN curl -sL https://dtcooper.github.io/raspotify/install.sh | sh
+
+
+run apt-get install -y python3-tk redis-server openbox xorg lightdm x11-xserver-utils
+run apt-get install -y software-properties-common
+run apt-add-repository -y ppa:ubuntu-elisp/ppa
+run apt update
+run apt-get install -y emacs-snapshot
+COPY frontend/requirements.txt /app
+RUN pip3 install -r /app/requirements.txt
+
+CMD bash

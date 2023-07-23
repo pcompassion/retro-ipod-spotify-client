@@ -1,3 +1,5 @@
 spotipy
 redis
 pillow
+fastapi[all]
+python-dotenv
